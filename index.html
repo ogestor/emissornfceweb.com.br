@@ -55,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="w75 mr-auto">
 				<ul class="inline-list gt-small align-m">
 					<li class="min-px-w150" data-rgen-sm="block"><hr class="bdr-op-light-5"></li>
-					<li><h3 class="title mini mr-0 txt-white" data-rgen-sm="block align-c">Experimente Grátis</h3></li>
+					<li><h3 class="title mini mr-0 txt-white" data-rgen-sm="block align-c" style="font-size: 1.45rem;">TESTE GRÁTIS POR 15 DIAS</h3></li>
 					<li class="min-px-w150" data-rgen-sm="block"><hr class="bdr-op-light-5"></li>
 				</ul>
 
@@ -64,32 +64,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<input type="hidden" name="bitrix_id" value="">
 						<div class="field-wrp">
 							<div class="row gt10">
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<div class="form-group">
-										<input class="form-control bg-white rd-4 bdr-glass w100" data-label="CNPJ da empresa" data-msg="Digite o CNPJ da empresa" type="text" name="empresa_cnpj" placeholder="CNPJ da empresa (opcional)">
+										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Email" data-msg="Digite um e-mail válido" type="email" name="empresa_email" placeholder="E-mail">
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<div class="form-group">
-										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Email" data-msg="Digite um e-mail válido" type="email" name="empresa_email" placeholder="Seu e-mail">
+										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Nome" data-msg="Digite seu nome" type="text" name="empresa_contato" placeholder="Nome">
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<div class="form-group">
-										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Seu nome" data-msg="Digite seu nome" type="text" name="empresa_contato" placeholder="Seu nome">
+										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Telefone" data-msg="Digite o telefone" type="tel" name="empresa_telefone" placeholder="Telefone">
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control bg-white rd-4 bdr-glass w100" required data-label="Telefone" data-msg="Digite o telefone" type="tel" name="empresa_telefone" placeholder="Seu telefone">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<button type="submit" id="ligacao" value="ligacao" data-loading-text="Carregando..." class="btn solid btn-dark bdr-2 block btn-reset bold-n send-form" style="min-height: 46px;">Receber Ligação</button>
-									</div>
-								</div>
-								<div class="col-md-6">
+								</div>				
+								<div class="col-md-12">
 									<div class="form-group">
 										<button type="submit" id="acessar" value="acessar" data-loading-text="Carregando..." class="btn solid btn-secondary bdr-2 block btn-reset bold-n send-form" style="min-height: 46px;">Acesse Agora</button>
 									</div>
@@ -120,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				
 				<div class="col-md-4 offset-md-1">
-					<a target="_blank" href="https://ogestor.com.br/" class="btn btn-default solid block">Conheça a oGestor</a>
+					<a href="#"><img src="images/ogestor-logo-2.svg" class="mr-auto title-h1" style="" title="Logotipo oGestor Sistemas - Emissor de Notas Fiscais Ilimitado" alt="Logotipo oGestor Sistemas - 240x60 - Emissor de Notas Fiscais Ilimitado"></a>
 				</div>
 			</div>
 		</div>
@@ -164,20 +154,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 	<section class="pd-tb-small bg-default">
 		<div class="container small align-c typo-light" data-animate-in="fadeInUp">
-			<a href="https://youtu.be/M6Zz8BQs2GI" target="_blank" class="iconbox sq60 fs60 mr-b-micro txt-default"><i class="far fa-play-circle"></i></a>
+			<a href="#"	id="open-video" target="_blank" class="iconbox sq60 fs60 mr-b-micro txt-default"><i class="far fa-play-circle"></i></a>
 			<h2 class="title f-2" data-rgen-sm="medium">Conheça oGestor na prática</h2>
 			<p>
-				Veja como é fácil fazer a primeira emissão de um conhecimento de transporte em nosso sistema. 
+				Veja como é fácil fazer a primeira emissão de uma nota fiscal em nosso sistema. 
 				<br />
 				São mais de 10 anos trabalhando para facilitar sua gestão empresarial.
 			</p>
 		</div>
+		<div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-video">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/M6Zz8BQs2GI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 		<div class="bg-holder full-wh z0">
 			<b data-bgholder="overlay" class="full-wh z5" data-bgcolor="rgba(45, 51, 69, 0.8)"></b>
 			<div data-bgholder="parallax" class="full-wh z2" data-parallax-img="images/background-tablet.png"></div>
 			<b data-bgholder="bg-img" class="full-wh bg-cover bg-cc z1"></b>
 		</div>
 
+	</section>
+
+	<section class="sistemas">
+		<div class="container small">
+			<h5 class="title f-2 align-c" data-rgen-sm="medium">Principais sistemas</h5>
+			<hr class="mr-tb-mini max-px-w140 bdr-b-2 mr-auto" data-rgen-sm="mr-tb-30">
+			<div class="row gt20 mb20">
+				<div class="col-md-4" data-animate-in="fadeInUp|0.1">
+					<div class="info-obj img-t g20 small align-c">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-plugin"></i></span></div>
+						<div class="info" style="height: 130px;">
+							<h3 class="title mini">SISTEMAS PARA GESTÃO</h3>
+							<p class="mr-0">Um sistema que irá lhe auxiliar nos processos de Gestão e Crescimento de sua empresa</p>
+						</div>
+						<table>
+							<tr><td>CONTROLE DE ESTOQUE</td></tr>
+							<tr><td>GESTÃO DE CONTRATOS</td></tr>
+							<tr><td>CONTROLE DE PRODUÇÃO</td></tr>
+							<tr><td>FINANCEIRO COMPLETO</td></tr>
+							<tr><td>EMISSÃO DE NOTAS FISCAIS</td></tr>
+							<tr><td class='last'>GESTÃO DE COMPRAS</td></tr>
+						</table>
+					</div>
+				</div>
+				
+				<div class="col-md-4" data-animate-in="fadeInUp|0.2">
+					<div class="info-obj img-t g20 small align-c emissor">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-cloud-upload"></i></span></div>
+						<div class="info" style="height: 130px;">
+							<h3 class="title mini emissor">EMISSORES FISCAIS</h3>
+							<p class="mr-0">Sistemas ILIMITADOS de Emissão e armazenamento, oferecendo recursos para auxiliar sua rotina de trabalho</p>
+						</div>
+						<table>
+							<tr><td>EMISSOR NF-E OGESTOR</td></tr>
+							<tr><td>EMISSOR NFC-E OGESTOR</td></tr>
+							<tr><td>EMISSOR CT-E OGESTOR</td></tr>
+							<tr><td>EMISSOR MDF-E OGESTOR</td></tr>
+							<tr><td>CERTIFICADOS A1 E A3</td></tr>
+							<tr><td class='last'>SISTEMAS ILIMITADOS</td></tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.3">
+					<div class="info-obj img-t g20 small align-c">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-network"></i></span></div>
+						<div class="info" style="height: 130px;">
+							<h3 class="title mini">SISTEMAS SOB MEDIDA</h3>
+							<p class="mr-0">Tenha um sistema específico para a sua empresa. Não importa sua demanda ou necessidade, nós vamos te atender</p>
+						</div>
+						<table>
+							<tr><td>CONSULTORIA EMPRESARIAL</td></tr>
+							<tr><td>ATENDIMENTO ESPECIALIZADO</td></tr>
+							<tr><td>IMPLANTAÇÃO</td></tr>
+							<tr><td>ANÁLISE DE PROCESSOS</td></tr>
+							<tr><td>GESTÃO DE NEGÓCIOS</td></tr>
+							<tr><td class='last'>INFRAESTRUTURA PRÓPRIA</td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="pd-tb-small" data-rgen-sm="pd-tb-small">
